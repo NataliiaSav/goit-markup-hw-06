@@ -425,6 +425,42 @@ div.icon {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--primary-white-color);
 }
+.footer-subscribe {
+    padding-top: 72px;
+    padding-left: 93px;
+}
+.form-subscribe {
+    display: flex;
+    padding-top: 20px;
+}
+
+.mail-subscribe {
+    display: flex;
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.button.subscribe {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    text-align: left;
+    padding-left: 28px;
+}
+.button-icon {
+    position: relative;
+}
+.icon-send {
+    position: absolute;
+    top: 14px;
+    right: 28px;
+   fill: var(--primary-white-color);
+}
 /* portfolio */
 .filter.list {
     display: flex;
