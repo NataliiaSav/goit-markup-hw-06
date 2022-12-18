@@ -436,14 +436,17 @@ div.icon {
 
 .mail-subscribe {
     display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 358px;
     height: 50px;
     font-size: 16px;
     line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-white-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    outline: none;
 }
 .button.subscribe {
     width: 200px;
@@ -645,7 +648,8 @@ div.icon {
     padding-left: 16px;
     padding-top: 12px;
     font-size: 12px;
-    line-height: 1.17; 
+    line-height: 1.17;
+    resize: none; 
 } 
 .modal-icon {
     position: absolute;
@@ -683,6 +687,7 @@ div.icon {
     top: 4px;
     left: 62px;
     fill: transparent;
+    cursor: pointer;
 }
 .input-box {
     position: absolute;
@@ -693,6 +698,7 @@ div.icon {
     height: 15px; 
     border: 1px solid var(--title-color);
     border-radius: 4px;
+    cursor: pointer;
 }
 .checkbox-input:checked + .input-box {
     background-color: var(--accent-color);
