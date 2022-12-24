@@ -578,6 +578,7 @@ div.icon {
     left: 50%;
     width: 528px;
     height: 581px;
+    padding: 40px;
     border: 1px solid var(--primary-white-color);
     border-radius: 4px;
     background-color: var(--primary-white-color);
@@ -606,8 +607,8 @@ div.icon {
     fill: var(--accent-color);
 }
 .modal-title {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    /* padding-top: 40px;
+    padding-bottom: 30px; */
 
     font-weight: 700;
     font-size: 20px;
@@ -620,7 +621,9 @@ div.icon {
 
 .modal-form {
     position: relative;
-    margin-left: 40px;
+}
+.form-field {
+    padding-top: 12px;
 }
 .modal-label {
     display: flex;
@@ -666,52 +669,47 @@ div.icon {
 }
 
 /* Checkbox */
-
-.checkbox-label {
-    position: relative;
-    margin-top: 20px;
-    padding-left: 77px;
-    font-size: 14px;
-    line-height: 1.7;
+.checkbox-form {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
 }
 .checkbox-input {
     appearance: none;
 }
+
+.checkbox-label {
+    position: relative;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:var(--text-color);
+}
+
+.checkbox-icon {
+    position: absolute;
+    margin: 2px 8px 0 0;
+    fill: transparent;
+    border: 2px solid var(--secondary-bcg-color);
+    border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 .link-accept {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--accent-color);
 }
-.icon-check {
-    position: absolute;
-    top: 4px;
-    left: 62px;
-    fill: transparent;
-    cursor: pointer;
-}
-.input-box {
-    position: absolute;
-    top: 0;
-    left: 60px;
-
-    width: 15px;
-    height: 15px; 
-    border: 1px solid var(--title-color);
-    border-radius: 4px;
-    cursor: pointer;
-}
-.checkbox-input:checked + .input-box {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    
-}
-.checkbox-input:checked ~ .icon-check {
-    fill: var(--primary-white-color);
-}
 .button.send {
+    display: block;
     width: 200px;
     height: 50px;
-    margin-top: 30px;
-    margin-left: 165px;
+    margin: 0 auto;
     text-align: center;
 }

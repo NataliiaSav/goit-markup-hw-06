@@ -438,17 +438,17 @@
             >
             </textarea>
           </div>
-          <div class="accept">
-            <label class="checkbox-label">
-              <input class="checkbox-input" type="checkbox" name="accept" />
-              <span class="input-box"></span>
-              Погоджуюся з розсилкою та приймаю <a href="#" class="link-accept">Умови договору</a>
-              <svg class="icon-check" width="11" height="8">
-                <use href="./images/icons.svg#check"></use>
-              </svg>
-            </label>
-            <button type="submit" class="button send">Відправити</button>
+
+          <div class="checkbox-form ">
+            <input class="checkbox-input" id="terms-checkbox" type="checkbox" name="terms-checkbox" />
+            <svg class="checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+            <label class="checkbox-label" for="terms-checkbox">
+            Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a>
+             </label>
           </div>
+          <button type="submit" class="button send">Відправити</button>
         </form>
       </div>
     </div>
